@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -49,9 +50,9 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4">Product</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-background/80 hover:text-background transition-colors">Overview</a></li>
-              <li><a href="#" className="text-background/80 hover:text-background transition-colors">Pricing</a></li>
-              <li><a href="#" className="text-background/80 hover:text-background transition-colors">Customer stories</a></li>
+              <li><Link to="/overview" className="text-background/80 hover:text-background transition-colors" data-testid="footer-overview">Overview</Link></li>
+              <li><Link to="/#pricing" className="text-background/80 hover:text-background transition-colors" data-testid="footer-pricing">Pricing</Link></li>
+              <li><Link to="/customer-stories" className="text-background/80 hover:text-background transition-colors" data-testid="footer-customer-stories">Customer stories</Link></li>
             </ul>
           </div>
 
@@ -59,9 +60,9 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4">Resources</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-background/80 hover:text-background transition-colors">Blog</a></li>
-              <li><a href="#" className="text-background/80 hover:text-background transition-colors">Guides & tutorials</a></li>
-              <li><a href="#" className="text-background/80 hover:text-background transition-colors">Help center</a></li>
+              <li><Link to="/blog" className="text-background/80 hover:text-background transition-colors" data-testid="footer-blog">Blog</Link></li>
+              <li><Link to="/guides" className="text-background/80 hover:text-background transition-colors" data-testid="footer-guides">Guides & tutorials</Link></li>
+              <li><Link to="/help" className="text-background/80 hover:text-background transition-colors" data-testid="footer-help">Help center</Link></li>
             </ul>
           </div>
 
@@ -69,9 +70,9 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-lg mb-4">Company</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-background/80 hover:text-background transition-colors">About us</a></li>
-              <li><a href="#" className="text-background/80 hover:text-background transition-colors">Careers</a></li>
-              <li><a href="#" className="text-background/80 hover:text-background transition-colors">Media kit</a></li>
+              <li><Link to="/about" className="text-background/80 hover:text-background transition-colors" data-testid="footer-about">About us</Link></li>
+              <li><Link to="/careers" className="text-background/80 hover:text-background transition-colors" data-testid="footer-careers">Careers</Link></li>
+              <li><Link to="/media-kit" className="text-background/80 hover:text-background transition-colors" data-testid="footer-media-kit">Media kit</Link></li>
             </ul>
           </div>
         </div>
@@ -83,12 +84,12 @@ const Footer = () => {
               <p className="text-background/60 text-sm">
                 ©2021 Whitepace LLC.
               </p>
-              <a href="#" className="text-background/60 hover:text-background text-sm transition-colors">
+              <Link to="/privacy" className="text-background/60 hover:text-background text-sm transition-colors" data-testid="footer-privacy">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-background/60 hover:text-background text-sm transition-colors">
+              </Link>
+              <Link to="/terms" className="text-background/60 hover:text-background text-sm transition-colors" data-testid="footer-terms">
                 Terms of Service
-              </a>
+              </Link>
             </div>
             
             <div className="flex items-center space-x-4">
