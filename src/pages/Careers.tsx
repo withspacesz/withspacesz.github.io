@@ -18,7 +18,7 @@ const openings = [
     title: "Product Manager",
     department: "Product",
     location: "Remote / New York",
-    type: "Full-time", 
+    type: "Full-time",
     experience: "3+ years",
     description: "Drive product strategy and execution for our core collaboration features."
   },
@@ -92,7 +92,7 @@ const Careers = () => {
                 Join Our <span className="bg-gradient-primary bg-clip-text text-transparent">Team</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Help us build the future of work. We're looking for passionate, talented people 
+                Help us build the future of work. We're looking for passionate, talented people
                 to join our mission of empowering teams worldwide.
               </p>
             </div>
@@ -134,7 +134,7 @@ const Careers = () => {
                           <h3 className="text-xl font-bold">{job.title}</h3>
                           <Badge>{job.department}</Badge>
                         </div>
-                        
+
                         <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-4">
                           <div className="flex items-center">
                             <MapPin className="w-4 h-4 mr-1" />
@@ -149,13 +149,13 @@ const Careers = () => {
                             <span>{job.experience}</span>
                           </div>
                         </div>
-                        
+
                         <p className="text-muted-foreground leading-relaxed">{job.description}</p>
                       </div>
-                      
+
                       <div className="lg:ml-8">
-                        <Button 
-                          size="lg" 
+                        <Button
+                          size="lg"
                           className="w-full lg:w-auto"
                           data-testid={`apply-${job.title.toLowerCase().replace(/\s+/g, '-')}`}
                         >
@@ -175,154 +175,6 @@ const Careers = () => {
               <Button variant="outline" size="lg" data-testid="send-resume">
                 Send Us Your Resume
               </Button>
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </div>
-  );
-};
-
-export default Careers;
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { MapPin, Clock, Users } from "lucide-react";
-
-const openPositions = [
-  {
-    title: "Senior Frontend Developer",
-    department: "Engineering",
-    location: "Remote",
-    type: "Full-time",
-    description: "Join our frontend team to build beautiful, performant user interfaces using React, TypeScript, and modern web technologies."
-  },
-  {
-    title: "Product Designer",
-    department: "Design",
-    location: "San Francisco, CA",
-    type: "Full-time", 
-    description: "Help shape the future of productivity software by designing intuitive and delightful user experiences."
-  },
-  {
-    title: "Backend Engineer",
-    department: "Engineering",
-    location: "Remote",
-    type: "Full-time",
-    description: "Build scalable backend systems and APIs that power our collaboration platform used by millions of users."
-  },
-  {
-    title: "Customer Success Manager",
-    department: "Customer Success",
-    location: "New York, NY",
-    type: "Full-time",
-    description: "Help our customers achieve success with Whitepace by providing guidance, support, and strategic advice."
-  }
-];
-
-const benefits = [
-  "Competitive salary and equity",
-  "Comprehensive health insurance",
-  "Unlimited PTO policy",
-  "Remote-first culture",
-  "Professional development budget",
-  "Top-tier equipment and tools",
-  "Flexible working hours",
-  "Team retreats and events"
-];
-
-const Careers = () => {
-  return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      <main className="pt-16">
-        <section className="py-24">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Join Our <span className="bg-gradient-primary bg-clip-text text-transparent">Team</span>
-              </h1>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Be part of a mission to transform how teams work together. Join us in building 
-                the future of productivity and collaboration software.
-              </p>
-            </div>
-
-            {/* Culture Section */}
-            <div className="bg-muted/30 rounded-2xl p-8 mb-16">
-              <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-bold text-center mb-8">Why Work at Whitepace?</h2>
-                <div className="grid md:grid-cols-2 gap-8 mb-8">
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4">Our Culture</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      We foster an environment of creativity, collaboration, and continuous learning. 
-                      Our team is passionate about building products that make a real difference in 
-                      people's work lives.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-4">Growth & Impact</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Join a fast-growing company where your contributions directly impact millions of users. 
-                      We provide opportunities for professional growth and career advancement.
-                    </p>
-                  </div>
-                </div>
-                
-                <div>
-                  <h3 className="text-xl font-semibold mb-6">Benefits & Perks</h3>
-                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                    {benefits.map((benefit, index) => (
-                      <div key={index} className="flex items-center">
-                        <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                        <span className="text-muted-foreground">{benefit}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Open Positions */}
-            <div>
-              <h2 className="text-3xl font-bold text-center mb-12">Open Positions</h2>
-              <div className="space-y-6">
-                {openPositions.map((position, index) => (
-                  <Card key={index} className="card-gradient border-0 shadow-medium hover:shadow-glow transition-all duration-300">
-                    <CardContent className="p-6">
-                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                        <div className="flex-1 mb-4 md:mb-0">
-                          <div className="flex items-center gap-3 mb-2">
-                            <h3 className="text-xl font-bold">{position.title}</h3>
-                            <Badge>{position.department}</Badge>
-                          </div>
-                          
-                          <div className="flex items-center gap-4 text-muted-foreground text-sm mb-3">
-                            <div className="flex items-center">
-                              <MapPin className="w-4 h-4 mr-1" />
-                              {position.location}
-                            </div>
-                            <div className="flex items-center">
-                              <Clock className="w-4 h-4 mr-1" />
-                              {position.type}
-                            </div>
-                          </div>
-                          
-                          <p className="text-muted-foreground leading-relaxed">{position.description}</p>
-                        </div>
-                        
-                        <div className="ml-0 md:ml-6">
-                          <Button>Apply Now</Button>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
             </div>
           </div>
         </section>
