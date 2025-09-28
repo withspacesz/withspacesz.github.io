@@ -49,7 +49,7 @@ const Header = () => {
                     Overview
                   </Link>
                   <Link 
-                    to="/#pricing" 
+                    to="/pricing" 
                     className="block px-4 py-2 text-sm hover:bg-muted transition-colors"
                     onClick={() => setIsProductsOpen(false)}
                     data-testid="nav-pricing"
@@ -69,7 +69,7 @@ const Header = () => {
             </div>
             
             <Link 
-              to="/#features" 
+              to="/solutions" 
               className="text-foreground hover:text-primary transition-colors font-medium"
               data-testid="nav-solutions"
             >
@@ -116,7 +116,7 @@ const Header = () => {
             </div>
             
             <Link 
-              to="/#pricing" 
+              to="/pricing" 
               className="text-foreground hover:text-primary transition-colors font-medium"
               data-testid="nav-pricing-main"
             >
@@ -129,7 +129,7 @@ const Header = () => {
             <Button variant="ghost" className="font-medium" data-testid="button-login">
               Login
             </Button>
-            <Link to="/#pricing">
+            <Link to="/pricing">
               <Button className="font-semibold" data-testid="button-try-free">
                 Try Whitepace free
               </Button>
@@ -160,7 +160,7 @@ const Header = () => {
                   Overview
                 </Link>
                 <Link 
-                  to="/#pricing" 
+                  to="/pricing" 
                   className="block px-4 py-2 text-foreground hover:text-primary transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                   data-testid="mobile-nav-pricing"
@@ -178,7 +178,7 @@ const Header = () => {
               </div>
               
               <Link 
-                to="/#features" 
+                to="/solutions" 
                 className="text-foreground hover:text-primary transition-colors font-medium text-left px-2"
                 onClick={() => setIsMenuOpen(false)}
                 data-testid="mobile-nav-solutions"
@@ -218,7 +218,7 @@ const Header = () => {
                 <Button variant="ghost" className="font-medium justify-start" data-testid="mobile-button-login">
                   Login
                 </Button>
-                <Link to="/#pricing">
+                <Link to="/pricing">
                   <Button 
                     className="font-semibold w-full"
                     data-testid="mobile-button-try-free"

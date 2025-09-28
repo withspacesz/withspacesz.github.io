@@ -51,7 +51,7 @@ const Footer = () => {
             <h4 className="font-bold text-lg mb-4">Product</h4>
             <ul className="space-y-3">
               <li><Link to="/overview" className="text-background/80 hover:text-background transition-colors" data-testid="footer-overview">Overview</Link></li>
-              <li><Link to="/#pricing" className="text-background/80 hover:text-background transition-colors" data-testid="footer-pricing">Pricing</Link></li>
+              <li><Link to="/pricing" className="text-background/80 hover:text-background transition-colors" data-testid="footer-pricing">Pricing</Link></li>
               <li><Link to="/customer-stories" className="text-background/80 hover:text-background transition-colors" data-testid="footer-customer-stories">Customer stories</Link></li>
             </ul>
           </div>

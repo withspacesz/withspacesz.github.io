@@ -15,6 +15,8 @@ import Careers from "./pages/Careers";
 import MediaKit from "./pages/MediaKit";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import Solutions from "./pages/Solutions";
+import Pricing from "./pages/Pricing";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +38,8 @@ const App = () => (
           <Route path="/media-kit" element={<MediaKit />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/solutions" element={<Solutions />} />
+          <Route path="/pricing" element={<Pricing />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
