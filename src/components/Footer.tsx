@@ -22,7 +22,7 @@ const Footer = () => {
               className="bg-background text-foreground border-background/20"
             />
             <Button className="bg-primary hover:bg-primary/90 text-white">
-              Try Taskey free
+              Try Whitepace free
             </Button>
           </div>
           <p className="text-sm text-background/60 mt-4">
