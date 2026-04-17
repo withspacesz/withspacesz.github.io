@@ -26,7 +26,7 @@ const Footer = () => {
             </Button>
           </div>
           <p className="text-sm text-background/60 mt-4">
-            On a big team? Contact sales
+            On a big team? <Link to="/contact" className="underline hover:text-background/90">Contact sales</Link>
           </p>
         </div>
 
@@ -72,7 +72,8 @@ const Footer = () => {
             <ul className="space-y-3">
               <li><Link to="/about" className="text-background/80 hover:text-background transition-colors" data-testid="footer-about">About us</Link></li>
               <li><Link to="/careers" className="text-background/80 hover:text-background transition-colors" data-testid="footer-careers">Careers</Link></li>
-              <li><Link to="/media-kit" className="text-background/80 hover:text-background transition-colors" data-testid="footer-media-kit">Media kit</Link></li>
+              <li><Link to="/media-kit" className="text-background/80 hover:text-background transition-colors" data-testid="footer-media-kit">Newsroom</Link></li>
+              <li><Link to="/contact" className="text-background/80 hover:text-background transition-colors" data-testid="footer-contact">Contact us</Link></li>
             </ul>
           </div>
         </div>
